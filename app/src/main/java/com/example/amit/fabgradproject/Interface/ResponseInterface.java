@@ -15,6 +15,7 @@ import retrofit2.http.Query;
 
 public interface ResponseInterface {
 
+    @FormUrlEncoded
     @POST("/dummy_api_1/us_id")
     Call<User> getOutput(@Query("value") String name);
 
